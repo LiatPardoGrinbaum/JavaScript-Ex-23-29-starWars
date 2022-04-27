@@ -1,0 +1,1 @@
+const newArr = arr.myFind(callBack);
