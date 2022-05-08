@@ -15,13 +15,4 @@ function whoIsStronger(getStrength) {
   } else return "You are stronger";
 }
 
-// const func = getStrength.bind(hero);
-// console.log(whoIsStronger.call(hero, hero.getStrength));
-
-// const getStrengthFunc = function () {
-//   return this.getStrength;
-// };
-
-// console.log(whoIsStronger(getStrengthFunc.call(hero)));
-
 console.log(whoIsStronger(hero.getStrength.bind(hero)));
