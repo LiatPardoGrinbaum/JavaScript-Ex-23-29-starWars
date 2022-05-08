@@ -67,3 +67,8 @@ function hola() {
 hola();
 const hey = new hola();
 console.log(hey);
+
+arr = new Array();
+console.log(arr);
+
+arr.find = "nothing";
