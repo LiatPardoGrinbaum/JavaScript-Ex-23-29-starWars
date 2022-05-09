@@ -1,7 +1,8 @@
 const button = document.querySelector("button");
 button.addEventListener("click", getJoke);
 
-//fetch return a promise. if i add .then to that promise it will show me the response object
+//fetch returns a promise. if i add .then to that promise it will show me the resolve of the promise- in this api case- a response object (inside there is body which is a readble stream- a stream of bind data which has a method called json() that if i use it, it will return a promise that js can use (because that action of getting the data takes time (asynchronist), promise will help with it). data is the resolve of that promise. and thats why we are doing .then twice.
+
 function getJoke() {
   fetch("https://api.jokes.one/jod")
     .then((res) => {
